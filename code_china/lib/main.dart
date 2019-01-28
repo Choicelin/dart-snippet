@@ -1,45 +1,18 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyStatefulWidget());
+void main() => runApp(MyApp());
 
-class MyStatefulWidget extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return new MyStatefulWidgetState();
-  }
-}
-
-class MyStatefulWidgetState extends State<MyStatefulWidget> {
-
-  String text = "Click Me!";
-
-  changeText() {
-    if (text == "Click Me!") {
-      setState(() {
-        text = "Aha World!";
-      });
-    } else {
-      setState(() {
-        text = "Click Me!";
-      });
-    }
-  }
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: "Test",
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text("Test"),
+    return MaterialApp(
+      title: 'Flutter layout demo',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter layout demo'),
         ),
-        body: new Center(
-          child: new InkWell(
-            child: new Text(text),
-            onTap: () {
-              this.changeText();
-            },
-          ),
+        body: Center(
+          child: Text('Hello World'),
         ),
       ),
     );
