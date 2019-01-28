@@ -1,16 +1,16 @@
 # code_china
 
-A new Flutter project.
+.
+├── README.md                   ---markdown项目描述文件
+├── android                     ---Android源代码目录    
+├── build                       ---项目构建后输出的相关文件目录
+├── flutter_app.iml             ---项目相关的配置文件
+├── flutter_app_android.iml     ---Android相关的配置文件
+├── ios                         ---iOS源代码目录
+├── lib                         ---Dart源码目录
+├── pubspec.lock                ---安装锁定文件
+├── pubspec.yaml                ---flutter依赖配置文件，类似Android中的build.grale
+└── test                        ---测试代码目录
 
-## Getting Started
+开发的代码主要存放在lib/目录下，项目的入口文件main.dart也在lib/目录下。
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
